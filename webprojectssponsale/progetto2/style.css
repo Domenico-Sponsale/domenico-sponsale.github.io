@@ -1,0 +1,80 @@
+.head,
+.body {
+    display: grid;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid rgb(255, 255, 255);
+    justify-content: space-between;
+    width: 50%;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background: url(background.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.head {
+    align-items: center;
+    justify-content: center;
+}
+
+.head>h1 {
+    width: 50%;
+    align-items: center;
+    position: absolute;
+    background-color: transparent;
+}
+
+.head>img {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+.divis {
+    height: 10px;
+}
+
+.body>a {
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.body>ul {
+    display: grid;
+    list-style-type: circle;
+    list-style-position: inside;
+    align-items: flex-start;
+    justify-content: space-around;
+    justify-items: start;
+}
+
+
+.body>a:hover {
+    color: aqua;
+}
+
+* {
+    background: black;
+    color: white;
+}
