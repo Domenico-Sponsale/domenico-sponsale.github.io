@@ -25,36 +25,36 @@ header.transparent {
 }
 
 header.solid {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgb(0, 0, 0);
 }
 
-nav ul {
+#nav-links {
     display: flex;
     justify-content: flex-end;
     list-style: none;
 }
 
-nav ul li {
+#nav-links li {
     margin-left: 20px;
 }
 
-nav ul li a {
+#nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-nav ul li a:hover {
+#nav-links li a:hover {
     border-bottom: 2px solid white;
     /* Sottolinea quando si passa col mouse */
 }
 
-nav ul li a.active {
+#nav-links li a.active {
     border-bottom: 2px solid #ff6347;
     /* Sottolinea il link attivo */
 }
 
-.introduction {
+.container-head {
     background: url('background.jpg') no-repeat center/cover;
     height: 60vh;
     display: flex;
@@ -64,9 +64,9 @@ nav ul li a.active {
     position: relative;
 }
 
-.intro-text {
+.head-text {
     /* Sfondo semi-trasparente */
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     /* Effetto blur */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -74,12 +74,12 @@ nav ul li a.active {
     border-radius: 20px;
 }
 
-.intro-text h1 {
+.head-text h1 {
     font-size: 48px;
     font-weight: bold;
 }
 
-.intro-text h2 {
+.head-text h2 {
     font-size: 32px;
 }
 
@@ -121,6 +121,17 @@ nav ul li a.active {
     outline-color: rgba(255, 255, 255, 0.7);
 }
 
+.hamburger {
+    display: none;
+    /* Nascondi di default */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 101;
+}
+
 /* Media query per schermi più piccoli */
 @media (max-width: 1024px) {
     .project {
@@ -130,6 +141,37 @@ nav ul li a.active {
 }
 
 @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        /* Nascondi i link di navigazione */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+
+    }
+
+    #nav-links.open {
+        display: flex;
+        /* Mostra il menu quando è aperto */
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+        /* Aggiungi margine tra i link */
+    }
+
+    #nav-links {
+        transition: all 0.3s ease-in-out;
+    }
+
     .project {
         flex: 1 1 calc(100% - 40px);
         /* Una colonna su schermi piccoli */

@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const pages = {
         home: `
     <section id="home">
-        <div class="introduction">
-            <div class="intro-text">
+        <div class="container-head">
+            <div class="head-text">
                 <h1>Mi presento:</h1>
                 <h2>Mi chiamo Domenico Sponsale, sono uno studente e vengo da Mottola.</h2>
             </div>
@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
         `,
         'chi-sono': `
             <section id="chi-sono">
-                <div class="introduction">
-                    <div class="intro-text">
+                <div class="container-head">
+                    <div class="head-text">
                         <h1>Chi Sono</h1>
                         <h2>Sono uno sviluppatore appassionato di web development.</h2>
                     </div>
@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
         `,
         progetto: `
             <section id="progetto">
-                <div class="introduction">
-                    <div class="intro-text">
+                <div class="container-head">
+                    <div class="head-text">
                         <h1>Il Mio Progetto</h1>
                         <h2>Sto lavorando a un progetto di sviluppo web innovativo!</h2>
                     </div>
@@ -55,12 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const contentDiv = document.getElementById('content');
     const navLinks = document.querySelectorAll('nav ul li a');
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navLinksContainer = document.getElementById('nav-links');
 
     // Funzione per caricare la pagina dinamicamente
     const loadPage = (page) => {
         if (pages[page]) {
             contentDiv.innerHTML = pages[page]; // Carica il contenuto della pagina
             setActiveLink(page); // Imposta il link attivo
+            navLinksContainer.classList.remove('open');
         }
     };
 
@@ -83,6 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
             history.pushState({ page: page }, '', `#${page}`); // Aggiorna l'URL senza ricaricare la pagina
         });
     });
+
+    hamburgerBtn.addEventListener("click", ()=>{
+        navLinksContainer.classList.toggle('open');
+    })
 
     // Carica la pagina corrente basata sull'URL hash
     const currentPage = window.location.hash.substring(1) || 'home';
