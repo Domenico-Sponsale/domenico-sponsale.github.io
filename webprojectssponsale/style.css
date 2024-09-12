@@ -95,17 +95,17 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10%;
     padding: 0 20px;
 }
 
 .project {
-    flex: 1 1 calc(33.333% - 40px); /* Tre colonne con gap di 20px */
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     outline: 2px dashed rgba(255, 255, 255, 0.4);
-    transition: transform 0.3s ease;
-    min-width: 300px;
+    transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+    height: 100%;
+    width: 25%;
 }
 
 .project:hover {
