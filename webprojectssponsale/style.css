@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: black;
     color: white;
+    height: 100%;
 }
 
 header {
@@ -44,11 +45,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid white; /* Sottolinea quando si passa col mouse */
+    border-bottom: 2px solid white;
+    /* Sottolinea quando si passa col mouse */
 }
 
 nav ul li a.active {
-    border-bottom: 2px solid #ff6347; /* Sottolinea il link attivo */
+    border-bottom: 2px solid #ff6347;
+    /* Sottolinea il link attivo */
 }
 
 .introduction {
@@ -62,8 +65,10 @@ nav ul li a.active {
 }
 
 .intro-text {
-    background-color: rgba(128, 128, 128, 0.2); /* Sfondo semi-trasparente */
-    backdrop-filter: blur(10px); /* Effetto blur */
+    background-color: rgba(128, 128, 128, 0.2);
+    /* Sfondo semi-trasparente */
+    backdrop-filter: blur(10px);
+    /* Effetto blur */
     padding: 20px;
     border-radius: 10px;
 }
@@ -95,17 +100,19 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10%;
+    gap: 20px;
     padding: 0 20px;
+    height: 100%;
 }
 
 .project {
+    flex: 1;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     outline: 2px dashed rgba(255, 255, 255, 0.4);
-    transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55);
-    height: 100%;
-    width: 25%;
+    transition: transform 0.3s cubic-bezier(.68, -0.55, .27, 1.55);
+    height: 50vh;
+    width: 25vh;
 }
 
 .project:hover {
@@ -116,12 +123,14 @@ nav ul li a.active {
 /* Media query per schermi più piccoli */
 @media (max-width: 1024px) {
     .project {
-        flex: 1 1 calc(50% - 40px); /* Due colonne su tablet o schermi medi */
+        flex: 1 1 calc(50% - 40px);
+        /* Due colonne su tablet o schermi medi */
     }
 }
 
 @media (max-width: 768px) {
     .project {
-        flex: 1 1 calc(100% - 40px); /* Una colonna su schermi piccoli */
+        flex: 1 1 calc(100% - 40px);
+        /* Una colonna su schermi piccoli */
     }
 }
