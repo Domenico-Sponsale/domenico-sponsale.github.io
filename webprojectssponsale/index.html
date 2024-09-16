@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Domenico Sponsale</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header id="header" class="transparent">
-        <nav>
-            <button class="hamburger" id="hamburger-btn">
-                &#9776; <!-- Simbolo dell'hamburger -->
-            </button>
-            <ul id="nav-links">
-                <li><a href="#home" data-page="home" class="active">Home</a></li>
-                <li><a href="#chi-sono" data-page="chi-sono">Chi Sono</a></li>
-            </ul>
-        </nav>
+      <nav id="nav-links">
+        <a href="#home" class="logo">Domenico Sponsale</a>
+        <ul>
+          <li><a href="#home" data-page="home" class="active">Home</a></li>
+          <li><a href="#chi-sono" data-page="chi-sono">Chi Sono</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main id="content">
-        <!-- Il contenuto dinamico sarà caricato qui -->
-    </main>
+    <main id="content"></main>
+
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="#" class="logo">Domenico Sponsale</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Domenico Sponsale.</p>
+      </div>
+    </footer>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
