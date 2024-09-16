@@ -1,12 +1,18 @@
+/* General Styles */
+* {
+    background: black;
+    color: white;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+}
+
 .head,
 .body {
     display: grid;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     border: 1px solid rgb(255, 255, 255);
-    justify-content: space-between;
-    width: 50%;
-    justify-items: center;
+    justify-content: center; /* Center items horizontally */
+    width: 90%; /* Set a percentage width for better responsiveness */
     margin-left: auto;
     margin-right: auto;
 }
@@ -17,16 +23,17 @@
 }
 
 .head>h1 {
-    width: 50%;
-    align-items: center;
-    position: absolute;
+    width: 100%; /* Full width on mobile for better readability */
     background-color: transparent;
+    margin: 0; /* Remove default margin */
 }
 
 .head>img {
-    width: 50%;
-    display: grid;
-    align-items: center;
+    width: 100%; /* Full width on mobile */
+    max-width: 400px; /* Maximum width to prevent it from getting too large */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any inline spacing issues */
+    margin: 0 auto; /* Center horizontally */
     pointer-events: none;
     background-color: transparent;
 }
@@ -45,16 +52,42 @@
     list-style-type: circle;
     list-style-position: inside;
     align-items: flex-start;
-    justify-content: space-around;
-    justify-items: start;
+    justify-content: center; /* Center items horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
-
 
 .body>a:hover {
     color: aqua;
 }
 
-* {
-    background: black;
-    color: white;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .head,
+    .body {
+        width: 100%; /* Full width on smaller screens */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .head>h1 {
+        font-size: 1.5em; /* Adjust font size for better readability */
+    }
+
+    .head>img {
+        width: 80%; /* Slightly smaller width for images on mobile */
+    }
+
+    .body>ul {
+        gap: 10px; /* Add space between list items */
+    }
+}
+
+@media (max-width: 480px) {
+    .head>h1 {
+        font-size: 1.2em; /* Further adjust font size for very small screens */
+    }
+
+    .body>ul {
+        font-size: 0.9em; /* Slightly smaller font size for lists */
+    }
 }
