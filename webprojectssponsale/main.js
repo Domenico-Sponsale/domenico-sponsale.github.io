@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="container-head">
         <div class="head-text">
             <h1>Chi Sono</h1>
-            <h2>Sono un ragazzi appassionato di web development.</h2>
+            <h2>Sono un ragazzo appassionato di web e software development.</h2>
         </div>
     </div>
 
