@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <p><strong>Attività:</strong> FESTIVAL INTERNAZIONALE CHIèDISCENA TEATROLAB 2.0</p>
               <p><strong>Svolta presso:</strong> TEATRO ROSSINI</p>
               <p><strong>Luogo:</strong> GIOIA DEL COLLE</p>
-              <p><strong>Durata:</strong> 01/11/2021 - 01/05/202</p>
+              <p><strong>Durata:</strong> 01/11/2021 - 01/05/2022</p>
             </div>
           </div>
         </div>
