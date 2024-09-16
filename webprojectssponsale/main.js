@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="portfolio">
             <h2>Una selezione dei miei lavori</h2>
             <div class="containers">
-                <a class="container c1" href="/webprojectssponsale/progetto2/" ><div class="container-content">Progetto 1</div></a>
+                <a class="container c1" href="/webprojectssponsale/progetto2/" ><div class="container-content">Il mio manifesto di Mozilla</div></a>
                 <a class="container c2" href="/"><div class="container-content">Progetto 2</div></a>
                 <a class="container c3" href="/"><div class="container-content">Progetto 3</div></a>
             </div>
