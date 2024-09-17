@@ -206,6 +206,10 @@ a {
     margin-bottom: 40px;
 }
 
+.section.comp{
+    padding-left: 20px;
+}
+
 .section h3 {
     font-size: 22px;
     color: #ff0000;

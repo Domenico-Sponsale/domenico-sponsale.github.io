@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
 
         <!-- Lingue -->
-        <div class="section">
+        <div class="section comp">
             <h3>Lingue</h3>
             <ul class="languages">
                 <li>Italiano - Madrelingua</li>
