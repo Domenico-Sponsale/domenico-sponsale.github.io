@@ -312,15 +312,19 @@ p {
     }
 
     #nav-links ul {
-        flex-direction: column;
+        display: flex;
         columns: 2;
         position: absolute;
         align-self: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
     #nav-links ul li {
-        margin-left: 0;
+        margin-left: 0px;
         margin-bottom: 10px;
+        justify-items: center;
+        margin-right: 10px;
     }
 
     .logo {
