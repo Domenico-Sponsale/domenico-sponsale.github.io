@@ -74,7 +74,7 @@ body {
 }
 
 .container-head {
-    background: url('background.jpg') no-repeat center/cover;
+    background: url('./img/background.jpg') no-repeat center/cover;
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -153,7 +153,7 @@ body {
 
 .c2,
 .c3 {
-    background-image: url('./wip.webp');
+    background-image: url('./img/wip.webp');
     /* Immagine di default */
     background-size: cover;
     background-position: center 20%;
